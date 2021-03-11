@@ -1,14 +1,37 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
-  </div>
+<div class="app">
+ <v-app>
+    <navbar/>
+    <carousel/>
+    <gatinhasmanhosas/>
+   <v-main>
+     <v-container>
+     </v-container>
+   </v-main>
+   <bottomnav/>
+ </v-app>
+</div>
 </template>
 
-<style lang="scss">
+<script>
+import bottomnav from './components/bottomnav.vue';
+import carousel from './components/carousel.vue';
+import gatinhasmanhosas from './components/gatinhasmanhosas.vue';
+import navbar from './components/navbar';
+
+export default {
+  components: {
+    navbar,
+    bottomnav,
+    carousel,
+    gatinhasmanhosas
+  }
+  
+}
+</script>
+
+<style lan,
+    Gatinhasmanhosasg="scss">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
