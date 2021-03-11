@@ -58,7 +58,17 @@
           </v-expansion-panel-header>
           <v-expansion-panel-content>
             <v-divider></v-divider>
-            <v-card-text>oi</v-card-text>
+
+             <v-toolbar
+      height="72"
+    >
+      <v-switch
+        v-model="$vuetify.theme.dark"
+        label="Ativar/desat modo escuro"
+        persistent-hint
+      ></v-switch>
+    </v-toolbar>
+    
           </v-expansion-panel-content>
         </v-expansion-panel>
       </v-expansion-panels>
@@ -84,6 +94,10 @@ export default {
 
 <style scoped>
 .v-expansion-panel-header {
-  font-size: 1.2rem;
+  font-size: 1.28rem;
+}
+
+.v-expansion-panels--popout > .v-expansion-panel {
+  max-width: 100%; 
 }
 </style>

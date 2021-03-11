@@ -6,6 +6,7 @@
     <gatinhasmanhosas/>
    <v-main>
      <v-container>
+       <maintablehome/>
      </v-container>
    </v-main>
    <bottomnav/>
@@ -18,13 +19,15 @@ import bottomnav from './components/bottomnav.vue';
 import carousel from './components/carousel.vue';
 import gatinhasmanhosas from './components/gatinhasmanhosas.vue';
 import navbar from './components/navbar';
+import maintablehome from './/components/maintablehome';
 
 export default {
   components: {
     navbar,
     bottomnav,
     carousel,
-    gatinhasmanhosas
+    gatinhasmanhosas,
+    maintablehome
   }
   
 }
