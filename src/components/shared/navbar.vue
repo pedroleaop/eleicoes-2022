@@ -94,7 +94,7 @@ export default {
 
 <style scoped>
 .v-expansion-panel-header {
-  font-size: 1.28rem;
+  font-size: 1.20rem;
 }
 
 .v-expansion-panels--popout > .v-expansion-panel {
