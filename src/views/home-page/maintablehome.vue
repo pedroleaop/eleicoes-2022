@@ -11,13 +11,13 @@
         <img id="imgnoticia" :src="noticia.picture">
       <div id="manchete">{{noticia.manchete}}</div>
       <div id="buttonnot" class="text-center">
-    <a href="www.google.com"><v-btn
+    <router-link to="/noticia"><v-btn
       rounded
       color="primary"
       dark
     >
      Leia mais
-    </v-btn></a>
+    </v-btn></router-link>
   </div>     
     </v-alert></td>
     </tr>

@@ -1,4 +1,5 @@
 <template>
+<div>
   <v-carousel
     cycle
     height="200"
@@ -25,6 +26,7 @@
       </v-sheet>
     </v-carousel-item>
   </v-carousel>
+</div>
 </template>
 
 <script>

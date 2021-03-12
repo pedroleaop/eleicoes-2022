@@ -11,7 +11,7 @@
         class="deep-orange darken-1 text-center"
       >
         <v-card-text>
-          <v-btn
+          <router-link to="/"><v-btn
             v-for="icon in icons"
             :key="icon"
             class="mx-4"
@@ -20,7 +20,7 @@
             <v-icon size="24px">
               {{ icon }}
             </v-icon>
-          </v-btn>
+          </v-btn></router-link>
         </v-card-text>
 
         <v-divider></v-divider>

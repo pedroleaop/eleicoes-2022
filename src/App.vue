@@ -2,11 +2,9 @@
 <div class="app">
  <v-app>
     <navbar/>
-    <carousel/>
-    <gatinhasmanhosas/>
    <v-main>
      <v-container>
-       <maintablehome/>
+       <router-view/>
      </v-container>
    </v-main>
    <bottomnav/>
@@ -15,19 +13,13 @@
 </template>
 
 <script>
-import bottomnav from './components/bottomnav.vue';
-import carousel from './components/carousel.vue';
-import gatinhasmanhosas from './components/gatinhasmanhosas.vue';
-import navbar from './components/navbar';
-import maintablehome from './/components/maintablehome';
+import bottomnav from './components/shared/bottomnav.vue';
+import navbar from './components/shared/navbar';
 
 export default {
   components: {
     navbar,
-    bottomnav,
-    carousel,
-    gatinhasmanhosas,
-    maintablehome
+    bottomnav
   }
   
 }
